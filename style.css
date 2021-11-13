@@ -6,7 +6,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #333;
-    color: #fff;
+    color: white;
     line-height: 1.6;
     height: 100vh;
     overflow: hidden;
@@ -47,7 +47,7 @@ body {
     color: #f4f4f4;
 }
 .navbar ul li a:hover {
-    color: skyblue;
+    color: #8300bf;
 }
 section {
     display: flex;
@@ -68,14 +68,14 @@ section p {
 }
 
 section#home {
-    background: url(/docs/images/vincentiu-solomon-ln5drpv_ImI-unsplash.webp) no-repeat center center/cover;
+    background: url(/docs/images/PurpleSpace.webp) no-repeat center center/cover;
 }
 section#skills {
-    background: black  no-repeat center center/cover;
+    background: url(/docs/images/PurpleSplash.webp)  no-repeat center center/cover;
 }
 section#work {
-    background: black no-repeat center center/cover;
+    background: url(/docs/images/PurplePixels.webp) no-repeat center center/cover;
 }
 section#contact {
-    background: black no-repeat center center/cover;
+    background: url(/docs/images/PurpleHallWay.webp) no-repeat center center/cover;
 }
