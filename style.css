@@ -79,3 +79,7 @@ section#work {
 section#contact {
     background: url(/docs/images/PurpleHallWay.webp) no-repeat center center/cover;
 }
+footer {
+    text-align: center;
+    background-color: black;
+}
