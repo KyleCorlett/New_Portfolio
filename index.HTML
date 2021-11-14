@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <script src="/index.js"></script>
     <title>Kyle Corlett</title>
 </head>
 <body>
@@ -23,15 +24,71 @@
         </section>
         <section id="skills">
             <h1>Skills</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis suscipit blanditiis neque inventore cum alias. Earum distinctio numquam deleniti cum!</p>
+            <div class="row">
+                <div class="column">
+                  <img src="/docs/images/Logos/html-1.svg" alt="HTML logo" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="/docs/images/Logos/css-3.svg" alt="CSS logo" alt="Forest" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="/docs/images/Logos/javascript-1.svg" alt="JS logo" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="/docs/images/Logos/git-icon.svg" alt="GIT logo" style="width:100%">
+                  </div>
+              </div>
         </section>
         <section id="work">
             <h1>Current Work</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis suscipit blanditiis neque inventore cum alias. Earum distinctio numquam deleniti cum!</p>
+            <div id="blogcards"> <!--Blog cards for main layout-->
+                <a href="" style="text-decoration: none !important;">
+                    <div class="card" id="blog1">
+                        <div class="blogcontainer">
+                        <h4 class="card-title"><b>Test Site One</b></h4>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed...</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" style="text-decoration: none !important;">
+                    <div class="card" id="blog2">
+                        <div class="blogcontainer">
+                        <h4 class="card-title"><b>Test Site Two</b></h4>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed...</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" style="text-decoration: none !important;">
+                    <div class="card" id="blog3">
+                        <div class="blogcontainer">
+                        <h4 class="card-title"><b>Test Site Three</b></h4>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed...</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="" style="text-decoration: none !important;">
+                    <div class="card" id="blog4">
+                        <div class="blogcontainer">
+                        <h4 class="card-title"><b>Test Site Four</b></h4>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed...</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </section>
         <section id="contact">
-            <h1>Contact me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis suscipit blanditiis neque inventore cum alias. Earum distinctio numquam deleniti cum!</p>
+            <div class="contactform">
+                <h1>Get in touch</h1>
+                <form action="action_page.php" class="form">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </section>
         <footer>
             <p>All rights reserved Kyle Corlett 2021 &copy</p>
