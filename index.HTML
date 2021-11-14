@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <script src="/index.js"></script>
     <title>Kyle Corlett</title>
 </head>
 <body>
@@ -42,14 +41,38 @@
         <section id="work">
             <h1>Current Work</h1>
             <div id="blogcards"> <!--Blog cards for main layout-->
-                <a href="" style="text-decoration: none !important;">
+                <button id="myBtn">
                     <div class="card" id="blog1">
                         <div class="blogcontainer">
                         <h4 class="card-title"><b>Test Site One</b></h4>
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed...</p>
                         </div>
                     </div>
-                </a>
+                </button>
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close"></span>
+                      <p>Some text in the Modal..</p>
+                    </div>
+                </div>
+                <script>
+                    var modal = document.getElementById("myModal");
+                    var btn = document.getElementById("myBtn");
+                    var span = document.getElementsByClassName("close")[0];
+                    btn.onclick = function() {
+                      modal.style.display = "block";
+                    }
+                    span.onclick = function() {
+                      modal.style.display = "none";
+                    }
+                    window.onclick = function(event) {
+                      if (event.target == modal) {
+                        modal.style.display = "none";
+                      }
+                    }
+                </script>
+
                 <a href="" style="text-decoration: none !important;">
                     <div class="card" id="blog2">
                         <div class="blogcontainer">
@@ -58,6 +81,7 @@
                         </div>
                     </div>
                 </a>
+
                 <a href="" style="text-decoration: none !important;">
                     <div class="card" id="blog3">
                         <div class="blogcontainer">
@@ -66,6 +90,7 @@
                         </div>
                     </div>
                 </a>
+
                 <a href="" style="text-decoration: none !important;">
                     <div class="card" id="blog4">
                         <div class="blogcontainer">
