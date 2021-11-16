@@ -1,4 +1,4 @@
-* {
+html {
     margin: 0;
     padding: 0;
 }
@@ -10,14 +10,15 @@ body {
     line-height: 1.6;
     height: 100vh;
     overflow: hidden;
+    width: 100%;
 }
 
 .container {
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 /*Main Section*/
 section {
@@ -40,19 +41,24 @@ section p {
 
 section#home {
     background: url(/docs/images/PurpleSpace.webp) no-repeat center center/cover;
+    width: 100%;
 }
 section#skills {
     background: url(/docs/images/PurpleSplash.webp)  no-repeat center center/cover;
+    width: 100%;
 }
 section#work {
     background: url(/docs/images/PurplePixels.webp) no-repeat center center/cover;
+    width: 100%;
 }
 section#contact {
     background: url(/docs/images/PurpleHallWay.webp) no-repeat center center/cover;
+    width: 100%;
 }
 footer {
     text-align: center;
     background-color: black;
+    width: 100%;
 }
 /*NavBar*/
 .navbar {
@@ -97,7 +103,7 @@ footer {
     clear: both;
     display: table;
 }
-/*Work Section*/
+ /* Work Section */
 #work {
     padding: 0 1%;
 }
@@ -112,62 +118,55 @@ footer {
     padding: 10rem 0 0;
     transition: transform 500ms ease;
 }
-.blogcontainer{
+.workCard{
     --padding: 1.5rem;
     padding: var(--padding);
     background: linear-gradient(hsl(0 0% 0% / 0), hsl(255 50% 0% / .5) 20%, hsl(0 0% 0% / 1));
 }
-@media (hover){
-    .blogcontainer{
+
+.workCard{
     transform: translateY(55%);
     transition: transform 500ms ease;
-    }
-    .card:hover{
-        transform: scale(1.05);
-    }
-    .card:hover .card-title::after{
-        transform: scaleX(1);
-    }
-    .card:hover .blogcontainer{
-        transform: translateY(0);
-    }
-    .card:hover .blogcontainer > *{
-        opacity: 1;
-        transition: opacity 500ms linear;
-        transition-delay: 300ms;
-    }
-    .blogcontainer > *:not(.card-title){
-        opacity: 0;
-        transition-delay: 1000ms;
-    }
 }
-#blogcards{
+.card:hover{
+    transform: scale(1.05);
+}
+.card:hover .card-title::after{
+    transform: scaleX(1);
+}
+.card:hover .workCard{
+       transform: translateY(0);
+}
+.card:hover .workCard > *{
+    opacity: 1;
+    transition: opacity 500ms linear;
+    transition-delay: 300ms;
+}
+.workCard > *:not(.card-title){
+    opacity: 0;
+    transition-delay: 1000ms;
+}
+.workContainer{
     display: grid;
     grid-gap: 1px;
     grid-template-columns: repeat(4, 1fr)
 }
-#blogcards img{
+.workContainer img{
     width: 100%;
 }
-.blogpage img{
-    width: 100%;
-}
-.blogpage p{
-    padding-bottom: 10px;
-}
-#blog1{
+#work1{
     background-image: url();
     background-size: cover;
 }
-#blog2{
+#work2{
     background-image: url();
     background-size: cover;
 }
-#blog3{
+#work3{
     background-image: url();
     background-size: cover;
 }
-#blog4{
+#work4{
     background-image: url();
     background-size: cover;
 }
@@ -209,7 +208,7 @@ footer {
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
 }
-#myBtn {
+#work button {
     background-color: rgba(0, 0, 0, 0);
     border: none;
     margin: 0;
